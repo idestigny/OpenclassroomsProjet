@@ -43,7 +43,7 @@ body {
 }
 
 
-/* NAV */
+/* NAVIGATION */
 
 .decorationNone {
     text-decoration: none;
@@ -107,11 +107,16 @@ body {
 }
 
 .bordureNav {
-    border-top: 1px solid blue;
+    border-top: 1px solid transparent;
 }
 
-.bordureNav23 {
-    border-top: 1px solid transparent;
+.bordureNav:hover {
+    border-top: 1px solid #0065fc;
+    cursor: pointer;
+}
+
+.bordureNav:hover>a {
+    color: #0065fc;
 }
 
 .marglogo {
