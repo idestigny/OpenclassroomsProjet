@@ -17,41 +17,50 @@
     <!-- HEADER -->
     <header class="header">
         <nav class="sizeNav">
-            <div class="flexBetween">
-                <div><img class="marglogo" src="./img/Reservia@3x.png" alt="logo Reservia" width="120px" height="50px" /></div>
-                <div class="sizeLiens flexAround">
-                    <div class="sizeLien flexCentre bordureNav"><a class="colorLien2 decorationNone" href="#"><strong>Hébergements</strong></a></div>
-                    <div class="sizeLien flexCentre bordureNav"><a class="colorLien2 decorationNone" href="#"><strong>Activités</strong></a></div>
-                    <div class="sizeLien flexCentre bordureNav"><a class="texteGras colorBleu decorationNone" href="#"><strong>S'inscrire</strong></a></div>
+            <div class="sizeLiens flexBetween">
+                <div class="mobileTitrePara"><img class="marglogo" src="./img/Reservia@3x.png" alt="logo Reservia" width="120px" height="50px" /></div>
+                <!-- ajout div englobant hébergement et Activités pour responsive -->
+                <div class="sizeLien12 flexCentre">
+                    <div class="sizeLien sizeLienMobile flexCentre bordureNav"><a class="colorLien2 decorationNone" href="#"><strong>Hébergements</strong></a></div>
+                    <div class="sizeLien sizeLienMobile flexCentre bordureNav"><a class="colorLien2 decorationNone" href="#"><strong>Activités</strong></a></div>
                 </div>
+                <div class="sizeLien flexCentre bordureNav"><a class="texteGras colorBleu decorationNone" href="#"><strong>S'inscrire</strong></a></div>
             </div>
         </nav>
         <section>
-            <div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <div class="mobileTitrePara">
+                <h1 class="texteGras">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <div class="bordureSearch flexCentre">
                 <div class="backGris flexCentre iconSize"><i class="fas fa-map-marker-alt"></i></div>
                 <div><input class="recherche flexCentre bordureNone paddingSearch" type="search" value="Marseille, France"></div>
-                <div class="backBleu flexCentre buttonSearch">Rechercher</div>
+                <div class="backBleu flexCentre buttonSearch"><span class="mobileNone">Rechercher</span>
+                    <span class="desktopNone"><i class="fas fa-search"></i></span></div>
             </div>
             <!--FILTRES-->
-            <div class="filtre margFiltre margFiltreTitre">
+            <div class="mobileFiltreWrap filtre margFiltre">
                 <div class="margFiltreTitre">
                     <h3>Filtres</h3>
                 </div>
-                <div class="flexBetween filtreTexteIcons"><i class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
-                    <div class="filtreTexte flexCentre"><strong>Economique</strong></div>
+                <!-- Ajout 2 div pour responsive mobile -->
+                <!--div1-->
+                <div class="flexAround">
+                    <div class="mobileEconomiques flexBetween filtreTexteIcons"><i class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreTexte flexCentre"><strong>Economique</strong></div>
+                    </div>
+                    <div class="mobileFamilial flexBetween filtreTexteIcons"><i class="fas fa-child fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreTexte flexCentre"><strong>Familial</strong></div>
+                    </div>
                 </div>
-                <div class="flexBetween filtreTexteIcons"><i class="fas fa-child fa-lg filtreIcons flexCentre"></i>
-                    <div class="filtreTexte flexCentre"><strong>Familial</strong></div>
-                </div>
-                <div class="flexBetween filtreTexteIcons"><i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
-                    <div class="filtreTexte flexCentre"><strong>Romantique</strong></div>
-                </div>
-                <div class="flexBetween filtreTexteIcons"><i class="fas fa-dog fa-lg filtreIcons flexCentre"></i>
-                    <div class="filtreTexte flexCentre"><strong>Animaux autorisés</strong></div>
+                <!--div2-->
+                <div class="mobileFiltreWrap flexAround">
+                    <div class="flexBetween filtreTexteIcons"><i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreTexte flexCentre"><strong>Romantique</strong></div>
+                    </div>
+                    <div class="flexBetween filtreTexteIcons"><i class="fas fa-dog fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreTexte flexCentre"><strong>Animaux autorisés</strong></div>
+                    </div>
                 </div>
             </div>
             <div class="info">
@@ -61,7 +70,7 @@
         </section>
     </header>
     <!--BLOC HEBERGEMENT-->
-    <section class="flexAround">
+    <section id="hebergements" class="flexAround">
         <div class="flexColumnAround sizeHebergements backGris blocHebergements">
             <h2>Hébergements à Marseille</h2>
             <div class="bloc1 flexBetween">
@@ -157,7 +166,7 @@
         <!--BLOC LES PLUS POPULAIRES-->
         <div class="sizePopulaires blocPopulaires backGris">
             <div class="flexBetween">
-                <h2 class="texteGras">Les plus populaires</h2>
+                <h2 class="tabletteSizeTitrePop texteGras">Les plus populaires</h2>
                 <div><i class="fas fa-chart-line fa-2x"></i></div>
             </div>
             <div class="flexColumnAround">
@@ -208,7 +217,7 @@
     </section>
     <!--BLOC ACTIVITES A MARSEILLE-->
     <section class="Activités">
-        <h2>Activités à Marseille</h2>
+        <h2 class="mobileTitrePara">Activités à Marseille</h2>
         <div class="blocActivites flexBetween">
             <div class="cubeActivites flexColumnCentre">
                 <div class="imgActivites1"></div>
